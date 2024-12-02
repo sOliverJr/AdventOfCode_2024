@@ -25,3 +25,4 @@ for i in range(len(list_one)):
     result += abs(list_one[i] - list_two[i])
 
 print(f'Result: {str(result)}')
+# First run & try
