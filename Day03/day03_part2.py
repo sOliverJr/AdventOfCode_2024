@@ -9,11 +9,11 @@ def get_input():
 
 
 input_list = get_input()
+writing = True
 result = 0
 
 for line in input_list:
     # line = re.sub("don't\(\)[^d]+do\(\)", '', line)
-    writing = True
     char_block = ''
     new_line = ''
     for char in line:
@@ -40,3 +40,4 @@ print(f'Result: {str(result)}')
 # 155803863 >
 # 114257865 >
 # 89846869 >
+# Dachte für jede Linie muss die writing-condition mit true initialisiert werden....
