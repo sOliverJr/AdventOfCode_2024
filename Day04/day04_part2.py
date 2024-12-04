@@ -11,24 +11,18 @@ result = 0
 
 
 def test_forward_slash_diagonal(x: int, y: int):
-    try:
-        string = input_list[y+1][x-1] + input_list[y][x] + input_list[y-1][x+1]
-        if string in ['MAS', 'SAM']:
-            return True
-        else:
-            return False
-    except IndexError:
+    string = input_list[y+1][x-1] + input_list[y][x] + input_list[y-1][x+1]
+    if string in ['MAS', 'SAM']:
+        return True
+    else:
         return False
 
 
 def test_back_slash_diagonal(x: int, y: int):
-    try:
-        string = input_list[y-1][x-1] + input_list[y][x] + input_list[y+1][x+1]
-        if string in ['MAS', 'SAM']:
-            return True
-        else:
-            return False
-    except IndexError:
+    string = input_list[y-1][x-1] + input_list[y][x] + input_list[y+1][x+1]
+    if string in ['MAS', 'SAM']:
+        return True
+    else:
         return False
 
 
@@ -43,4 +37,4 @@ for y, line in enumerate(input_list):
 print(f'Result: {str(result)}')
 
 # 2044 >
-# fyi arr[-1] returns last value of array in python...
+# fyi, arr[-1] returns last value of array in python...
