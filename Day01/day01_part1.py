@@ -1,4 +1,3 @@
-
 CURRENT_DAY = '01'
 
 
